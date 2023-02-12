@@ -1,0 +1,9 @@
+emp=read.csv(file("employee data.csv"), stringsAsFactors = FALSE)
+emp$gender=as.factor(emp$gender)
+emp$title=as.factor(emp$title)
+any(is.na(emp))
+emp1=emp
+select(ends_with("name"), gender, everything()) 
+filter(emp$salary >= 70000)
+arrange(gender, last_name)
+emp1
