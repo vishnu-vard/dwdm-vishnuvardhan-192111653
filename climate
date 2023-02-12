@@ -1,0 +1,12 @@
+@relation climate
+@attribute condition{sunny,cloudy,rainy}
+@attribute temperature numeric
+@attribute class{yes,no}
+@data
+sunny  85  yes
+sunny  76  no
+cloudy 95  yes
+rainy  87  yes
+rainy  88  no
+sunny  89  no
+rainy  92  yes
