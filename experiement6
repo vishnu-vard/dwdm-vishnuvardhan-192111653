@@ -1,0 +1,5 @@
+data("mtcars")
+fit<-lm(mpg ~ wt,data=mtcars)
+summary(fit)
+plot(mtcars$wt,mtcars$mpg)
+abline(fit,col="red")
